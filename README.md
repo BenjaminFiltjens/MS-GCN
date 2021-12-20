@@ -29,8 +29,8 @@ The c3d data preparation script requires [Biomechanical-Toolkit](https://github.
 
 ## Data
 After processing the dataset (scripts are dataset specific), each processed dataset should be placed in the ``data`` folder. We provide an example for a motion capture dataset that is in [c3d](https://www.c3d.org/) format. For this particular example, we extract 9 joints in 3D:
-* `read_c3d/` -- Import the joints and action labels from the c3d and save both in a separate csv.
-* `gendata/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement]().
+* `data_prep/read_frame.py` -- Import the joints and action labels from the c3d and save both in a separate csv.
+* `data_prep/gen_data/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement]().
 
 Please refer to the example in `data/example/` for more information on how to structure the files for training/prediction.
 
