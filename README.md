@@ -35,7 +35,7 @@ Please refer to the example in `data/example/` for more information on how to st
 ## Pre-trained models
 Pre-trained models are provided for HuGaDB, PKU-MMD, and LARa. To reproduce the results from the paper:
 * See the "Data" section for more information on how to prepare the datasets;
-* Place the pre-trained models in `models/, e.g. `models/hugadb;
+* Place the pre-trained models in ``models/``, e.g. `models/hugadb;
 * Run label_eval with proper arguments, e.g. `--dataset=hugadb.
 
 ## Acknowledgements
