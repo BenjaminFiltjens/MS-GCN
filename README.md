@@ -38,6 +38,8 @@ Pre-trained models are provided for HuGaDB, PKU-MMD, and LARa. To reproduce the 
 * See the "Data" section for more information on how to prepare the datasets.
 * Place the pre-trained models in ``models/``, e.g. ``models/hugadb``.
 * Ensure that the correct graph representation is chosen in ``ms_gcn``.
+* Comment out ``features = get_features(features)`` in model (only for lara and hugadb).
+* Specify the correct sampling rate, e.g. downsampling factor of 4 for lara.
 * Run main to generate the per-sample predictions with proper arguments, e.g. ``--dataset=hugadb`` ``--action=predict``.
 * Run label_eval with proper arguments, e.g. ``--dataset=hugadb``.
 
