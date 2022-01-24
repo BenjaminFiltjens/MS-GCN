@@ -35,8 +35,8 @@ Please refer to the example in `data/example/` for more information on how to st
 ## Pre-trained models
 Pre-trained models are provided for HuGaDB, PKU-MMD, and LARa. To reproduce the results from the paper:
 * See the "Data" section for more information on how to prepare the datasets;
-* Place the pre-trained models in ``models/``, e.g. `models/hugadb;
-* Run label_eval with proper arguments, e.g. `--dataset=hugadb.
+* Place the pre-trained models in ``models/``, e.g. ``models/hugadb``;
+* Run label_eval with proper arguments, e.g. ``--dataset=hugadb``.
 
 ## Acknowledgements
 The MS-GCN model and code are heavily based on [ST-GCN](https://github.com/yysijie/st-gcn) and [MS-TCN](https://github.com/yabufarha/ms-tcn). We thank the authors for publicly releasing their code.
