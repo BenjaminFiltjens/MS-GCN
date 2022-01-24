@@ -47,13 +47,13 @@ class Graph():
             neighbor_link = [(1, 0), (2, 1), (3, 2), (4, 3), (5, 0), (6, 5), (7, 6), (8, 7)]
             self.edge = self_link + neighbor_link
             self.center = 0
-        elif layout == 'activity':
+        elif layout == 'hugadb':
             self.num_node = 6
             self_link = [(i, i) for i in range(self.num_node)]
             neighbor_link = [(1, 0), (2, 1), (3, 0), (4, 3), (5, 0)]
             self.edge = self_link + neighbor_link
             self.center = 0
-        elif layout == 'logistics':
+        elif layout == 'lara':
             self.num_node = 19
             self_link = [(i, i) for i in range(self.num_node)]
             neighbor_link = [(1, 0), (2, 1), (3, 2), (4, 3), (5, 0), (6, 5), (7, 6), (8, 7), (9, 0), (10, 9), (11, 9), (12,10), (13,12), (14,13), (15,9), (16,15), (17,16), (18,17)]
