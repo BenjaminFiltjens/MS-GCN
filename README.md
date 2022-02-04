@@ -20,15 +20,15 @@ The c3d data preparation script requires [Biomechanical-Toolkit](https://github.
 * `model.py` -- train/predict script.
 * `models/` -- Location for saving the trained models.
 * `models/ms_gcn.py` -- The MS-GCN model.
-* `models/net_utils/` -- Scripts to partition the graph for the various datasets. For more information about the partitioning, please refer to the section [Graph representations](). For more information about spatial-temporal graphs, please refer to [ST-GCN](https://arxiv.org/pdf/1801.07455.pdf).
+* `models/net_utils/` -- Scripts to partition the graph for the various datasets. For more information about the partitioning, please refer to the section [Graph representations](https://arxiv.org/abs/2202.01727). For more information about spatial-temporal graphs, please refer to [ST-GCN](https://arxiv.org/pdf/1801.07455.pdf).
 * `data/` -- Location for the processed datasets. For more information, please refer to the 'FOG' example.
-* `data/signals.` -- Scripts for computing the feature representations. Used for datasets that provided spatial features per joint, e.g. FOG, TUG, and PKU-MMD v2. For more information, please refer to the section [Graph representations]().
+* `data/signals.` -- Scripts for computing the feature representations. Used for datasets that provided spatial features per joint, e.g. FOG, TUG, and PKU-MMD v2. For more information, please refer to the section [Graph representations](https://arxiv.org/abs/2202.01727).
 * `results/` -- Location for saving the results.
 
 ## Data
 After processing the dataset (scripts are dataset specific), each processed dataset should be placed in the ``data`` folder. We provide an example for a motion capture dataset that is in [c3d](https://www.c3d.org/) format. For this particular example, we extract 9 joints in 3D:
 * `data_prep/read_frame.py` -- Import the joints and action labels from the c3d and save both in a separate csv.
-* `data_prep/gen_data/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement]().
+* `data_prep/gen_data/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement](https://arxiv.org/abs/2202.01727).
 
 Please refer to the example in `data/example/` for more information on how to structure the files for training/prediction.
 
