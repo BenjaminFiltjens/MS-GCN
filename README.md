@@ -4,7 +4,7 @@ marker-based motion capture and multi-stage
 spatial-temporal graph convolutional neural
 networks](https://arxiv.org/abs/2103.15449) and [Skeleton-based action segmentation with multi-stage spatial-temporal graph convolutional neural networks](https://arxiv.org/abs/2202.01727), arXiv 2022 (in-review).
 
-It was originally developed for freezing of gait (FOG) assessment on a [proprietary dataset](https://movementdisorders.onlinelibrary.wiley.com/doi/10.1002/mds.23327). Recently, we have also achieved high skeleton-based action segmentation performance on public datasets, e.g. [HuGaDB](https://arxiv.org/abs/1705.08506), [LARa](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7436169/), [PKU-MMD v2](https://arxiv.org/abs/1703.07475), [TUG](https://www.nature.com/articles/s41597-020-00627-7).
+It was originally developed for freezing of gait (FOG) assessment on a [proprietary dataset](https://movementdisorders.onlinelibrary.wiley.com/doi/10.1002/mds.23327). Recently, we have also achieved high skeleton-based action segmentation performance on public datasets, e.g. [HuGaDB](https://arxiv.org/abs/1705.08506), [LARa version 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7436169/), [PKU-MMD v2](https://arxiv.org/abs/1703.07475), [TUG](https://www.nature.com/articles/s41597-020-00627-7).
 
 ## Requirements
 Tested on Ubuntu 16.04 and Pytorch 1.10.1. Models were trained on a
