@@ -10,14 +10,14 @@ It was originally developed for freezing of gait (FOG) assessment on a [propriet
 Tested on Ubuntu 16.04 and Pytorch 1.10.1. Models were trained on a
 [Nvidia Tesla K80](https://www.nvidia.com/en-gb/data-center/tesla-k80/).
 
+The c3d data preparation script requires [Biomechanical-Toolkit](https://github.com/Biomechanical-ToolKit/BTKPython). For installation instructions, please refer to the following [issue](https://github.com/Biomechanical-ToolKit/BTKPython/issues/2).
+
 ## Datasets
 * LARa: https://zenodo.org/record/3862782#.YizNT3pKjZs
 * PKU-MMD: https://www.icst.pku.edu.cn/struct/Projects/PKUMMD.html
 * HuGaDB: https://github.com/romanchereshnev/HuGaDB
 * TUG: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/7VF22X
 * FOG: not public
-
-The c3d data preparation script requires [Biomechanical-Toolkit](https://github.com/Biomechanical-ToolKit/BTKPython). For installation instructions, please refer to the following [issue](https://github.com/Biomechanical-ToolKit/BTKPython/issues/2).
 
 ## Content
 * `data_prep/` -- Data preparation scripts.
