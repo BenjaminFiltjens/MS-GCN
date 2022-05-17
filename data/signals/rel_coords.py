@@ -1,5 +1,5 @@
 # Adapted from: https://github.com/kalpitthakkar/pb-gcn/tree/master/data/signals
-# Only tested for a single reference node. If multiple reference node, please refer to the source code in pb-gcn
+# Only tested for a single reference node. If multiple reference nodes are required, please refer to the code in pb-gcn
 import numpy as np
 
 
@@ -22,7 +22,7 @@ def get_relative_coordinates(sample,
     coords_diff = (sample.transpose((2, 0, 1, 3)) - ref_loc).transpose((1, 2, 0, 3))
     rel_coords.append(coords_diff)
     
-    # Shape: 4*C, t, V, M 
+    # Shape: C, t, V, M 
     rel_coords = np.vstack(rel_coords)
     # Shape: C, T, V, M
     final_sample[:, start:end, :, :] = rel_coords
