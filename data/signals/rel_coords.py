@@ -1,8 +1,10 @@
+# Adapted from: https://github.com/kalpitthakkar/pb-gcn/tree/master/data/signals
+# Only tested for a single reference node. If multiple reference node, please refer to the source code in pb-gcn
 import numpy as np
 
 
 def get_relative_coordinates(sample,
-                             references=(4, 8, 12, 16)):
+                             references=(0)):
     # input: C, T, V, M
     # references=(4, 8, 12, 16)
     C, T, V, M = sample.shape
