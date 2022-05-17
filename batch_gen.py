@@ -7,7 +7,7 @@ from data.signals.rel_coords import get_relative_coordinates
 
 def get_features(sample):
     disps = get_displacements(sample)
-    rel_coords = get_relative_coordinates(sample)
+    rel_coords = get_relative_coordinates(sample, references=(0))
     sample = np.concatenate([disps, rel_coords], axis=0)
     return sample
 
