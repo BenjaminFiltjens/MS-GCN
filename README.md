@@ -1,4 +1,4 @@
-# Multi-Stage Spatial-Temporal Convolutional Neural Network (MS-GCN)
+# Multi-Stage Spatial-Temporal Graph Convolutional Neural Network (MS-GCN)
 This code implements the skeleton-based action segmentation MS-GCN model from [Automated freezing of gait assessment with
 marker-based motion capture and multi-stage
 spatial-temporal graph convolutional neural
@@ -13,11 +13,13 @@ Tested on Ubuntu 16.04 and Pytorch 1.10.1. Models were trained on a
 The c3d data preparation script requires [Biomechanical-Toolkit](https://github.com/Biomechanical-ToolKit/BTKPython). For installation instructions, please refer to the following [issue](https://github.com/Biomechanical-ToolKit/BTKPython/issues/2).
 
 ## Datasets
+The datasets can be downloaded from:
 * LARa: https://zenodo.org/record/3862782#.YizNT3pKjZs
 * PKU-MMD: https://www.icst.pku.edu.cn/struct/Projects/PKUMMD.html
 * HuGaDB: https://github.com/romanchereshnev/HuGaDB
 * TUG: https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/7VF22X
 * FOG: not public
+Alternatively, we provide a Onedrive link to download the used input features and labels. Note, though, that additional refinement of the features (e.g., [mmskeleton](https://github.com/open-mmlab/mmskeleton/blob/master/mmskeleton/datasets/utils/skeleton.py)) and of the labels (e.g., remove background labels/fill gaps between actions that are implausibly short) will likely improve results. Onedrive link: [Features and labels](https://kuleuven-my.sharepoint.com/:f:/g/personal/benjamin_filtjens_kuleuven_be/Eq6PwNm2VnVOrCLpcdir-XQBXZ5bXWhGLAl73pPbS8OGQQ?e=EqQJ7u).
 
 ## Content
 * `data_prep/` -- Data preparation scripts.
@@ -35,7 +37,7 @@ The c3d data preparation script requires [Biomechanical-Toolkit](https://github.
 ## Data
 After processing the dataset (scripts are dataset specific), each processed dataset should be placed in the ``data`` folder. We provide an example for a motion capture dataset that is in [c3d](https://www.c3d.org/) format. For this particular example, we extract 9 joints in 3D:
 * `data_prep/read_frame.py` -- Import the joints and action labels from the c3d and save both in a separate csv.
-* `data_prep/gen_data/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement](https://arxiv.org/abs/2202.01727).
+* `data_prep/gen_data/` -- Import the csv, construct the input, and save to npy for training. For more information about the input and label shape, please refer to the section [Problem statement](https://arxiv.org/abs/2202.01727). Data processing is not necessary if the downloaded features and labels are used.
 
 Please refer to the example in `data/example/` for more information on how to structure the files for training/prediction.
 
