@@ -54,7 +54,7 @@ Pre-trained models are provided for HuGaDB, PKU-MMD, and LARa. To reproduce the 
 * Run label_eval with proper arguments, e.g. ``--dataset=hugadb``.
 
 ## Acknowledgements
-The MS-GCN model and code are heavily based on [ST-GCN](https://github.com/yysijie/st-gcn) and [MS-TCN](https://github.com/yabufarha/ms-tcn). We thank the authors for publicly releasing their code.
+The MS-GCN model and code are based on [ST-GCN](https://github.com/yysijie/st-gcn) and [MS-TCN](https://github.com/yabufarha/ms-tcn). We thank the authors for publicly releasing their code.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
