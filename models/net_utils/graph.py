@@ -59,6 +59,12 @@ class Graph():
             neighbor_link = [(1, 0), (2, 1), (3, 2), (4, 3), (5, 0), (6, 5), (7, 6), (8, 7), (9, 0), (10, 9), (11, 9), (12,10), (13,12), (14,13), (15,9), (16,15), (17,16), (18,17)]
             self.edge = self_link + neighbor_link
             self.center = 0
+        elif layout == 'pku-mmd':
+            self.num_node = 25
+            self_link = [(i, i) for i in range(self.num_node)]
+            neighbor_link = [(12, 0), (13, 12), (14, 13), (15, 14), (16, 0), (17, 16), (18, 17), (19, 18), (1, 0), (20, 1), (2, 20), (3, 2), (4,20), (5,4), (6,5), (7,6), (21,7), (22,6), (8,20), (9,8), (10, 9), (11,10), (24,10), (23,11)]
+            self.edge = self_link + neighbor_link
+            self.center = 0
         else:
             raise ValueError("Do Not Exist This Layout.")
 
