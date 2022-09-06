@@ -14,10 +14,10 @@ class Graph():
 
         layout (string): must be one of the follow candidates
         - tp-vicon: 9 joints (marker-based mocap lower-body)
-        - activity: 6 joints (IMU-based mocap lower-body)
-        - logistics: 19 joints (marker-based mocap full-body)
-        - PKU-MMD: x joints (markerless-based mocap full-body)
-        - tug: x joints (marker-based mocap full-body)
+        - hugadb: 6 joints (IMU-based mocap lower-body)
+        - lara: 19 joints (marker-based mocap full-body)
+        - pku-mmd: x joints (markerless-based mocap full-body)
+        - tug dataset uses lara graph: 19 joints (marker-based mocap full-body)
 
         max_hop (int): the maximal distance between two connected nodes
         dilation (int): controls the spacing between the kernel points
